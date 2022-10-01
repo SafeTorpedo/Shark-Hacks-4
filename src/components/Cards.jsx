@@ -32,6 +32,10 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "1.1rem",
         color: "#ddd",
     },
+    button: {
+        color: "#fff",
+        background: "red",
+    },
 }));
 
 const Cards = ({ feature, checked }) => {
@@ -65,7 +69,9 @@ const Cards = ({ feature, checked }) => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small">Try</Button>
+                    <Button className={classes.button} size="small">
+                        Try
+                    </Button>
                 </CardActions>
             </Card>
         </Collapse>

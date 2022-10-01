@@ -17,7 +17,7 @@ const CardLinks = () => {
     const classes = useStyles();
     const checked = useWindowPosition("header");
     return (
-        <div className={classes.root}>
+        <div className={classes.root} id="cards">
             <Cards feature={features[0]} checked={checked} />
             <Cards feature={features[1]} checked={checked} />
         </div>
