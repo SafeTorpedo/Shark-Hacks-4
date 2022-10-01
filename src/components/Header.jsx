@@ -28,11 +28,11 @@ const useStyles = makeStyles((theme) => ({
         margin: "0 auto",
     },
     colorText: {
-        color: "#03c9d1",
+        color: "#01183d",
     },
     title: {
         color: "#fff",
-        fontSize: "2.5rem",
+        fontSize: "4rem",
     },
     container: {
         textAlign: "center",
