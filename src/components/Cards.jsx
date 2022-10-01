@@ -7,6 +7,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import { Collapse } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,39 +34,41 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const Cards = ({ feature }) => {
+const Cards = ({ feature, checked }) => {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root}>
-            <CardMedia
-                className={classes.media}
-                component="img"
-                height="140"
-                image={feature.imageURL}
-                alt="Photo"
-            />
-            <CardContent>
-                <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    className={classes.title}
-                >
-                    {feature.title}
-                </Typography>
-                <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    className={classes.desc}
-                >
-                    {feature.desc}
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small">Try</Button>
-            </CardActions>
-        </Card>
+        <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    component="img"
+                    height="140"
+                    image={feature.imageURL}
+                    alt="Photo"
+                />
+                <CardContent>
+                    <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="div"
+                        className={classes.title}
+                    >
+                        {feature.title}
+                    </Typography>
+                    <Typography
+                        variant="body2"
+                        color="text.secondary"
+                        className={classes.desc}
+                    >
+                        {feature.desc}
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button size="small">Try</Button>
+                </CardActions>
+            </Card>
+        </Collapse>
     );
 };
 

@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     title: {
         color: "#fff",
         fontSize: "5rem",
-        marginTop: 120,
+        marginTop: 90,
     },
     container: {
         textAlign: "center",
@@ -50,7 +50,7 @@ function Header() {
         setChecked(true);
     }, []);
     return (
-        <div className={classes.root}>
+        <div className={classes.root} id="header">
             <AppBar className={classes.appbar} elevation={0}>
                 <Toolbar className={classes.appbarWrapper}>
                     <h1 className={classes.appbarTitle}>
