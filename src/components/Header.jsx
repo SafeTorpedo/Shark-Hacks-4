@@ -15,10 +15,10 @@ const useStyles = makeStyles((theme) => ({
 
     appbar: {
         background: "none",
+        fontSize: "1.3rem",
     },
     icon: {
         color: "#fff",
-        fontSize: "2rem",
     },
     appbarTitle: {
         flexGrow: "1",
@@ -32,14 +32,14 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         color: "#fff",
-        fontSize: "4rem",
+        fontSize: "5rem",
+        marginTop: 120,
     },
     container: {
         textAlign: "center",
     },
     goDown: {
-        color: "#03c9d1",
-        fontSize: "2.5rem",
+        color: "#01183d",
     },
 }));
 
@@ -73,7 +73,10 @@ function Header() {
                         Mood
                     </h1>
                     <IconButton>
-                        <ExpandMoreIcon className={classes.goDown} />
+                        <ExpandMoreIcon
+                            fontSize="large"
+                            className={classes.goDown}
+                        />
                     </IconButton>
                 </div>
             </Collapse>
