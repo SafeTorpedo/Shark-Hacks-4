@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shark-hacks-4/static/css/main.a9041707.css",
+    "main.js": "/shark-hacks-4/static/js/main.bc02333b.js",
+    "static/js/787.94d11e5f.chunk.js": "/shark-hacks-4/static/js/787.94d11e5f.chunk.js",
+    "index.html": "/shark-hacks-4/index.html",
+    "main.a9041707.css.map": "/shark-hacks-4/static/css/main.a9041707.css.map",
+    "main.bc02333b.js.map": "/shark-hacks-4/static/js/main.bc02333b.js.map",
+    "787.94d11e5f.chunk.js.map": "/shark-hacks-4/static/js/787.94d11e5f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9041707.css",
+    "static/js/main.bc02333b.js"
+  ]
+}
