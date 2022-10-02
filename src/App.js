@@ -4,6 +4,7 @@ import { CssBaseline } from "@material-ui/core";
 import Header from "./components/Header";
 import CardLinks from "./components/CardLinks";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainForm from "./components/MainForm";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -14,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        fontFamily: "Nunito",
     },
 }));
 
@@ -35,7 +37,7 @@ function App() {
                     ></Route>
                     <Route
                         path="/chat/:roomName"
-                        element={<h1>Test</h1>}
+                        element={<MainForm />}
                     ></Route>
                     <Route path="*" element={<h1>404 Not Found</h1>}></Route>
                 </Routes>

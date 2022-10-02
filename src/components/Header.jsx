@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#fff",
         fontSize: "5rem",
         marginTop: 90,
+        fontFamily: "Nunito",
     },
     container: {
         textAlign: "center",
