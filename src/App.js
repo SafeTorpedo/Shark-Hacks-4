@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import CardLinks from "./components/CardLinks";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainForm from "./components/MainForm";
+import ChatRoom from "./components/ChatRoom";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -35,10 +36,8 @@ function App() {
                             </>
                         }
                     ></Route>
-                    <Route
-                        path="/chat/:roomName"
-                        element={<MainForm />}
-                    ></Route>
+                    <Route path="/chat" element={<MainForm />}></Route>
+                    <Route path="/chat/:roomId" element={<ChatRoom />}></Route>
                     <Route path="*" element={<h1>404 Not Found</h1>}></Route>
                 </Routes>
             </BrowserRouter>
