@@ -10,6 +10,7 @@ const features = [
         desc: "Chat anonymously as sharks",
         imageURL: process.env.PUBLIC_URL + "/assets/chat.jpg",
         time: 1500,
+        URL: "/chat",
     },
 ];
 
